@@ -194,6 +194,58 @@ Si usás Replit: apretás el botón **Publish** y listo.
 
 ---
 
+## 8. Subir cambios automáticamente desde VS Code a GitHub (y publicar)
+
+Si tenés el proyecto conectado a un repositorio de GitHub y a un servicio como **Vercel**, cada vez que subas cambios al repo, la web se vuelve a publicar **sola**.
+
+### Opción A — Con comandos en la terminal (3 líneas)
+
+Abrí la terminal de VS Code (`Terminal` → `New Terminal`) y, después de cada cambio:
+
+```bash
+git add -A
+git commit -m "describí brevemente qué cambiaste"
+git push
+```
+
+Vercel detecta el push en segundos y republica el sitio automáticamente.
+
+### Opción B — Con la interfaz visual de VS Code (sin escribir comandos)
+
+1. Hacé tus cambios y guardalos (`Ctrl + S`).
+2. En la barra lateral izquierda, click en el ícono de **Source Control** (las ramitas), o apretá `Ctrl + Shift + G`.
+3. Vas a ver listados todos los archivos modificados bajo "Changes".
+4. Pasá el mouse sobre "Changes" y apretá el **`+`** para agregar todos los archivos.
+5. Arriba escribí un mensaje describiendo el cambio (ej: "agregar excavadora CAT 320").
+6. Apretá **`✓ Commit`**.
+7. Apretá **`Sync Changes`** (o el ícono de las flechitas circulares abajo a la izquierda). Eso sube los cambios a GitHub.
+
+En 1–2 minutos, Vercel termina de republicar y la web nueva queda online.
+
+### Conexión inicial (solo la primera vez)
+
+Si todavía no conectaste la carpeta al repositorio de GitHub, abrí la terminal y corré:
+
+```bash
+git init
+git remote add origin https://github.com/TU-USUARIO/TU-REPO.git
+git branch -M master
+git add -A
+git commit -m "primera versión"
+git push -u origin master
+```
+
+(Reemplazá `TU-USUARIO/TU-REPO` por la URL real de tu repositorio).
+
+### Recomendaciones
+
+- **Antes de subir cambios importantes**: probá la web en local con `npm run dev` para asegurarte de que no se rompió nada.
+- **Mensajes de commit claros**: en vez de "cambios", escribí cosas como "agregar excavadora CAT 320" o "cambiar teléfono de contacto". Te va a servir para saber qué cambió cuando mires el historial.
+- **Si te equivocás**: GitHub guarda todo el historial. Siempre podés volver a una versión anterior desde la pestaña "Commits" del repo.
+- **NUNCA subir la carpeta `node_modules`**: el archivo `.gitignore` ya la excluye automáticamente.
+
+---
+
 ## Tips finales
 
 - **Antes de cambiar algo**: hacé una copia de seguridad del proyecto (carpeta zip).
