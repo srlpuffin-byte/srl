@@ -5,6 +5,7 @@ import flyerHyundai from "@/assets/flyer-hyundai-r220.jpeg";
 import flyerCat320d2 from "@/assets/flyer-cat-320d2.jpeg";
 import flyerHelicopteroExec90 from "@/assets/flyer-helicoptero-exec90.jpeg";
 import liugong856h from "@/assets/liugong-856h.jpg";
+import flyerDjiAgrasT50 from "@/assets/flyer-dji-agras-t50.png";
 
 export type CatalogoItem = {
   id: string;
@@ -20,6 +21,20 @@ export type CatalogoItem = {
 };
 
 export const catalogo: CatalogoItem[] = [
+  {
+    id: "dji-agras-t50",
+    nombre: "DJI AGRAS T50",
+    imagen: flyerDjiAgrasT50,
+    estado: "Nuevo",
+    origen: "Importación",
+    detalles: [
+      "Drone agrícola de fumigación de alta eficiencia",
+      "Fumigá más hectáreas con tecnología avanzada",
+      "Millas ilimitadas — Maximizá tu producción",
+      "Servicio personalizado y financiación disponible",
+    ],
+    categoria: "Aeronaves",
+  },
   {
     id: "helicoptero-exec-90",
     nombre: "Helicóptero EXEC 90",
