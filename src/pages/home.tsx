@@ -111,9 +111,14 @@ function Hero() {
               href="https://rentacar-rentauto.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 px-6 py-3 rounded-md bg-accent text-accent-foreground font-semibold tracking-wider text-xs shadow-lg hover:bg-accent/90 hover:-translate-y-0.5 hover:shadow-xl transition-all"
+              className="group inline-flex items-center gap-3 px-6 py-3 rounded-md bg-accent text-accent-foreground font-semibold tracking-wider text-xs shadow-lg hover:bg-accent/90 hover:-translate-y-0.5 hover:shadow-xl transition-all"
             >
-              RENTACAR
+              <div className="flex flex-col items-start gap-0.5">
+                <span>RENTACAR</span>
+                <span className="text-[10px] font-medium normal-case tracking-normal opacity-90">
+                  Alquiler de autos en Miami
+                </span>
+              </div>
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
