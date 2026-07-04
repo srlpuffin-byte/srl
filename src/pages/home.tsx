@@ -106,6 +106,17 @@ function Hero() {
               CATÁLOGO DE PRODUCTOS
             </Link>
           </div>
+          <div className="mt-4 flex">
+            <a
+              href="https://rentacar-rentauto.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 px-6 py-3 rounded-md bg-accent text-accent-foreground font-semibold tracking-wider text-xs shadow-lg hover:bg-accent/90 hover:-translate-y-0.5 hover:shadow-xl transition-all"
+            >
+              RENTACAR
+              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
         </motion.div>
 
         <motion.div
