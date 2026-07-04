@@ -4,6 +4,7 @@ import flyerServicios from "@/assets/flyer-servicios.jpeg";
 import flyerHyundai from "@/assets/flyer-hyundai-r220.jpeg";
 import flyerCat320d2 from "@/assets/flyer-cat-320d2.jpeg";
 import flyerHelicopteroExec90 from "@/assets/flyer-helicoptero-exec90.jpeg";
+import liugong856h from "@/assets/liugong-856h.jpg";
 
 export type CatalogoItem = {
   id: string;
@@ -100,6 +101,19 @@ export const catalogo: CatalogoItem[] = [
       "Peso: 21.200 - 21.500 kg",
       "Cucharón: 1.0 - 1.4 m³",
       "Modo Eco y gran rendimiento en obra",
+    ],
+    categoria: "Maquinaria Vial",
+  },
+  {
+    id: "liugong-clg856h",
+    nombre: "LIUGONG CLG856H",
+    imagen: liugong856h,
+    ano: "2024",
+    estado: "Muy poco uso",
+    detalles: [
+      "Cargadora Frontal",
+      "Balde 3mts cubico",
+      "En venta",
     ],
     categoria: "Maquinaria Vial",
   },
